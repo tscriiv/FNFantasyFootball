@@ -187,8 +187,9 @@ def data():
       
    
    company_json = json.dumps(company_data,indent=4,cls=CompanyEncoder)    
-      
-   return company_json
+   
+   #ENABLE CORS from any web address
+   return company_json,{'Access-Control-Allow-Origin': "*"}
 
 
     
